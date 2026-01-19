@@ -10657,6 +10657,15 @@ addcmd('deadlineesp',{},function(args, speaker)
 			end
 
 
+      local highlight = Instance.new("Highlight");
+      highlight.Parent = hum_root;
+      highlight.FillTransparency = 0.9;
+      highlight.FillColor = Color3.fromRGB(100, 255, 100);
+      highlight.OutlineTransparency = 0.6;
+      highlight.OutlineColor = Color3.fromRGB(90, 255, 90);
+      highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop;
+      highlight.Enabled = true;
+
 	
 			local billboardPart = billboards[playerName]
 			
